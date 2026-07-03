@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pitch an event to Dear Eleanor in Miami." />
+    <meta name="theme-color" content="#ed99aa" />
+    <title>Pitch Your Event | Dear Eleanor</title>
+    <link rel="icon" type="image/png" href="assets/dear-eleanor-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="pitch.js" defer></script>
+  </head>
+
+  <body class="pitch-page">
+    <a class="skip-link" href="#pitch-form">Skip to form</a>
+
+    <header class="site-header pitch-header">
+      <a class="brand" href="index.html" aria-label="Back to Dear Eleanor homepage">
+        <img src="assets/dear-eleanor-logo.png" alt="" />
+        <span>Dear Eleanor</span>
+      </a>
+      <a class="pitch-back" href="index.html">Back to the site <span>↙</span></a>
+    </header>
+
+    <main class="pitch-page-main">
+      <section class="pitch-panel pitch-panel-standalone" aria-labelledby="pitch-title-heading">
+        <span class="pitch-shape pitch-shape-ring" aria-hidden="true"></span>
+        <span class="pitch-shape pitch-shape-diamond" aria-hidden="true"></span>
+        <span class="pitch-shape pitch-shape-sun" aria-hidden="true">✳</span>
+        <div class="pitch-intro">
+          <p class="eyebrow"><span></span> Your idea, our room</p>
+          <h1 id="pitch-title-heading">TELL US ABOUT<br /><em>YOUR IDEA.</em></h1>
+          <p>You don’t need every detail—just give us the shape of it.</p>
+          <div class="pitch-note">Made in Miami.<br /><strong>Dreamed up by you. ♡</strong></div>
+        </div>
+
+        <form class="pitch-form" id="pitch-form" action="mailto:DearEleanorMiami@gmail.com" method="post" enctype="text/plain">
+          <div class="form-field">
+            <label for="pitch-name">Your name <span>*</span></label>
+            <input id="pitch-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="form-field">
+            <label for="pitch-email">Email <span>*</span></label>
+            <input id="pitch-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="form-field">
+            <label for="pitch-phone">Phone</label>
+            <input id="pitch-phone" name="phone" type="tel" autocomplete="tel" />
+          </div>
+          <div class="form-field">
+            <label for="pitch-social">Instagram or website</label>
+            <input id="pitch-social" name="social" type="text" placeholder="@handle or link" />
+          </div>
+          <div class="form-field">
+            <label for="pitch-title">Event name <span>*</span></label>
+            <input id="pitch-title" name="eventTitle" type="text" required />
+          </div>
+          <div class="form-field">
+            <label for="pitch-type">What kind of event? <span>*</span></label>
+            <select id="pitch-type" name="eventType" required>
+              <option value="">Choose one</option>
+              <option>Workshop or class</option>
+              <option>Live music or performance</option>
+              <option>Art show or installation</option>
+              <option>Community gathering</option>
+              <option>Food or dining experience</option>
+              <option>Market or pop-up</option>
+              <option>Other beautiful weirdness</option>
+            </select>
+          </div>
+          <div class="form-field form-field-wide">
+            <label for="pitch-description">The short pitch <span>*</span></label>
+            <textarea id="pitch-description" name="description" rows="5" placeholder="What happens, who is it for, and what makes it special?" required></textarea>
+          </div>
+          <div class="form-field">
+            <label for="pitch-dates">Preferred date(s) and time <span>*</span></label>
+            <input id="pitch-dates" name="dates" type="text" placeholder="Include flexibility if you have it" required />
+          </div>
+          <div class="form-field">
+            <label for="pitch-attendance">Expected attendance <span>*</span></label>
+            <input id="pitch-attendance" name="attendance" type="number" min="1" inputmode="numeric" required />
+          </div>
+          <div class="form-field">
+            <label for="pitch-price">Ticket price or budget</label>
+            <input id="pitch-price" name="price" type="text" placeholder="Free, donation, or ticketed" />
+          </div>
+          <div class="form-field">
+            <label for="pitch-duration">Estimated duration</label>
+            <input id="pitch-duration" name="duration" type="text" placeholder="Example: 2 hours" />
+          </div>
+          <div class="form-field form-field-wide">
+            <label for="pitch-needs">Setup, sound, or accessibility needs</label>
+            <textarea id="pitch-needs" name="needs" rows="3" placeholder="Anything the Dear Eleanor team should know"></textarea>
+          </div>
+          <div class="pitch-submit form-field-wide">
+            <p>This opens your email app with the pitch ready to send.</p>
+            <button class="button button-dark" type="submit">Send pitch by email <span>↗</span></button>
+          </div>
+          <p class="pitch-form-message form-field-wide" id="pitch-form-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
