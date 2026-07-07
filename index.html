@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dear Eleanor is a warm, inclusive community space in Miami for local art, music, workshops, gatherings, and connection."
+    />
+    <meta name="theme-color" content="#090909" />
+    <title>Dear Eleanor | By Natives, For Locals</title>
+    <link rel="icon" type="image/png" href="assets/dear-eleanor-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="site-header">
+      <a class="brand" href="#home" aria-label="Dear Eleanor, back to top">
+        <img src="assets/dear-eleanor-logo.png" alt="" />
+        <span>Dear Eleanor</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#events">Events</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#gallery">Gallery</a>
+        <a class="nav-link" href="#host">Host</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-glow hero-glow-one"></div>
+        <div class="hero-glow hero-glow-two"></div>
+
+        <div class="hero-copy reveal">
+          <h1 id="hero-title">BY NATIVES,<br /><em>FOR LOCALS.</em></h1>
+          <p class="hero-intro">Art, music, workshops, and Miami making things together.</p>
+          <div class="hero-actions">
+            <a class="button button-yellow" href="#events">See what’s happening <span>↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-one">
+          <div class="hero-photo-wrap">
+            <img
+              class="hero-photo"
+              src="assets/community-table.jpg"
+              alt="Friends and neighbors gathered around a long table at Dear Eleanor"
+            />
+          </div>
+          <img class="hero-logo" src="assets/dear-eleanor-logo.png" alt="Dear Eleanor, Miami Florida, established 2023" />
+          <div class="paper-note paper-note-pink">A creative<br />community space <span>♡</span></div>
+          <div class="doodle doodle-wave" aria-hidden="true">〰 〰</div>
+        </div>
+      </section>
+
+      <div class="ticker" aria-label="Dear Eleanor values">
+        <div class="ticker-track">
+          <div class="ticker-group">
+            <span>SAFE SPACE</span><b>●</b><span>LOCAL ARTISTS</span><b>●</b><span>ALL ARE WELCOME</span><b>●</b><span>COMMUNITY FIRST</span><b>●</b>
+          </div>
+          <div class="ticker-group" aria-hidden="true">
+            <span>SAFE SPACE</span><b>●</b><span>LOCAL ARTISTS</span><b>●</b><span>ALL ARE WELCOME</span><b>●</b><span>COMMUNITY FIRST</span><b>●</b>
+          </div>
+        </div>
+      </div>
+
+      <section class="section events-section" id="events" aria-labelledby="events-title">
+        <span class="hand-label hand-label-events" aria-hidden="true">made by Miami, for Miami ↘</span>
+        <div class="section-heading section-heading-compact reveal">
+          <div>
+            <h2 id="events-title">THIS MONTH<br /><em>AT DEAR ELEANOR</em></h2>
+          </div>
+        </div>
+
+        <div class="events-layout">
+          <div class="canva-calendar reveal">
+            <iframe
+              src="https://www.canva.com/design/DAHOQU203L4/v8wgKrbzjtpp4evUIynN7g/view?embed"
+              title="Dear Eleanor monthly events calendar"
+              loading="lazy"
+              allowfullscreen
+              allow="fullscreen"
+            ></iframe>
+            <div class="canva-calendar-footer">
+              <span>Dear Eleanor events</span>
+              <a href="https://canva.link/deareleanoreventscalendar" target="_blank" rel="noreferrer">Open full calendar ↗</a>
+            </div>
+          </div>
+
+          <aside class="ticket-card reveal delay-one">
+            <div class="ticket-photo">
+              <img src="assets/performance.jpg" alt="A live performance at Dear Eleanor" />
+              <span class="ticket-stub">ADMIT ONE</span>
+            </div>
+            <p class="eyebrow-small">See something you love?</p>
+            <h3>TICKETS,<br />WITHOUT THE FUSS.</h3>
+            <a class="button button-pink" href="https://www.deareleanormiami.com/events" target="_blank" rel="noreferrer">
+              View current events <span>↗</span>
+            </a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="about-collage reveal" aria-label="Life at Dear Eleanor">
+          <div class="polaroid-slider" data-polaroid-slider>
+            <figure class="polaroid-slide is-active">
+              <img src="assets/creative-workshop.jpg" alt="Art supplies arranged for a creative workshop" />
+            </figure>
+            <figure class="polaroid-slide">
+              <img src="assets/shared-table.jpg" alt="Neighbors making and sharing a meal together" />
+            </figure>
+            <figure class="polaroid-slide">
+              <img src="assets/community-gallery.jpg" alt="Friends talking together during an event at Dear Eleanor" />
+            </figure>
+            <figure class="polaroid-slide">
+              <img src="assets/making-gallery.jpg" alt="A guest making a colorful bracelet at a Dear Eleanor workshop" />
+            </figure>
+            <figure class="polaroid-slide">
+              <img src="assets/live-gallery.jpg" alt="A live band performing for a crowd at Dear Eleanor" />
+            </figure>
+            <div class="tape tape-one"></div>
+            <div class="tape tape-two"></div>
+            <div class="polaroid-caption">dear eleanor moments ♡</div>
+            <div class="polaroid-dots" aria-hidden="true"><span class="is-active"></span><span></span><span></span><span></span><span></span></div>
+          </div>
+        </div>
+
+        <div class="about-copy reveal delay-one">
+          <p class="eyebrow"><span></span> A bit about us</p>
+          <h2 id="about-title">A SPACE TO<br /><em>BE YOURSELF.</em></h2>
+          <p class="lead">Local art, music, workshops, and room to belong.</p>
+        </div>
+      </section>
+
+      <div class="creative-bridge" aria-hidden="true">
+        <span class="bridge-shape bridge-heart">♡</span>
+        <span class="bridge-shape bridge-wave">〰</span>
+        <div class="bridge-track">
+          <div class="bridge-group">
+            <span>DEAR ELEANOR</span><b>•</b><span>MIAMI, FL</span><b>•</b><span>EST. 2023</span><b>•</b>
+          </div>
+          <div class="bridge-group">
+            <span>DEAR ELEANOR</span><b>•</b><span>MIAMI, FL</span><b>•</b><span>EST. 2023</span><b>•</b>
+          </div>
+        </div>
+      </div>
+
+      <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="gallery-heading gallery-heading-compact reveal">
+          <div>
+            <p class="eyebrow eyebrow-dark"><span></span> Seen around the space</p>
+            <h2 id="gallery-title">GOOD PEOPLE.<br /><em>GOOD WEIRDNESS.</em></h2>
+          </div>
+        </div>
+
+        <div class="instagram-live reveal" aria-label="Latest posts from Dear Eleanor on Instagram">
+          <div class="instagram-live-accent" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="instagram-profile-frame">
+            <iframe
+              src="https://www.instagram.com/dear_eleanor305/embed/"
+              title="Latest posts from Dear Eleanor on Instagram"
+              loading="lazy"
+              scrolling="no"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="host-section" id="host" aria-labelledby="host-title">
+        <div class="host-copy reveal">
+          <p class="eyebrow"><span></span> Your idea, our room</p>
+          <h2 id="host-title">GOT A THING<br />YOU WANT TO <em>MAKE?</em></h2>
+          <a class="button button-dark" href="pitch.html" target="_blank" rel="noreferrer">
+            Pitch your event <span>↗</span>
+          </a>
+        </div>
+        <div class="host-visual reveal delay-one">
+          <img src="assets/community-table.jpg" alt="A warm community gathering around the table" />
+          <div class="host-scribble">bring your<br /><strong>big little idea</strong><span>↝</span></div>
+        </div>
+
+      </section>
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-top reveal">
+          <div>
+            <p class="eyebrow"><span></span> Find your way here</p>
+            <h2 id="contact-title">THE DOOR’S<br /><em>OPEN.</em></h2>
+          </div>
+          <div class="contact-note">
+            <p>We’re open irregularly—because the calendar leads the way.</p>
+            <a class="button button-dark" href="#events">Check the calendar <span>↗</span></a>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-card reveal">
+            <span class="contact-symbol" aria-hidden="true">⌂</span>
+            <p class="eyebrow-small">Visit</p>
+            <h3>148 NE 28TH ST.<br />MIAMI, FL 33137</h3>
+            <p>Parking: 120 NE 27th St.<br />Miami, FL 33137</p>
+            <a href="https://maps.google.com/?q=148+NE+28th+St+Miami+FL+33137" target="_blank" rel="noreferrer">Open in Maps ↗</a>
+          </article>
+          <article class="contact-card reveal delay-one">
+            <span class="contact-symbol" aria-hidden="true">✉</span>
+            <p class="eyebrow-small">Contact</p>
+            <h3><a href="tel:+13052090558">305 209 0558</a></h3>
+            <p><a href="mailto:DearEleanorMiami@gmail.com">DearEleanorMiami<br />@gmail.com</a></p>
+          </article>
+          <article class="contact-card contact-card-pink reveal delay-two">
+            <span class="contact-symbol" aria-hidden="true">♡</span>
+            <p class="eyebrow-small">Follow</p>
+            <h3><a href="https://www.instagram.com/dear_eleanor305/" target="_blank" rel="noreferrer">@DEAR_<br />ELEANOR305</a></h3>
+          </article>
+        </div>
+
+        <div class="mailing-list reveal">
+          <div>
+            <p class="eyebrow-small">A little note from Eleanor</p>
+            <h3>GET THE GOOD STUFF.</h3>
+          </div>
+          <form
+            id="mc-embedded-subscribe-form"
+            class="mailchimp-embed-form validate"
+            action="https://gmail.us12.list-manage.com/subscribe/post?u=5148aa7d3075518d8b04c80cf&amp;id=f926f30c99&amp;f_id=00ef40e0f0"
+            method="post"
+            name="mc-embedded-subscribe-form"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="mc-field-group">
+              <label for="mce-FNAME">First name</label>
+              <input id="mce-FNAME" class="text" name="FNAME" type="text" placeholder="FIRST NAME" autocomplete="given-name" value="" />
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-EMAIL">Email address</label>
+              <input id="mce-EMAIL" class="required email" name="EMAIL" type="email" placeholder="EMAIL ADDRESS" autocomplete="email" required value="" />
+            </div>
+            <div aria-hidden="true" class="mailchimp-honeypot">
+              <label for="mce-hidden-field">Leave this field empty</label>
+              <input id="mce-hidden-field" type="text" name="b_5148aa7d3075518d8b04c80cf_f926f30c99" tabindex="-1" value="" />
+            </div>
+            <div id="mce-responses" class="mailchimp-responses">
+              <div class="response" id="mce-error-response" style="display: none;"></div>
+              <div class="response" id="mce-success-response" style="display: none;"></div>
+            </div>
+            <button type="submit" name="subscribe" id="mc-embedded-subscribe">SUBSCRIBE <span>↗</span></button>
+            <p class="mailchimp-direct-note">Submits directly through Mailchimp.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <img src="assets/dear-eleanor-logo.png" alt="Dear Eleanor" />
+        <p><a href="https://maps.google.com/?q=148+NE+28th+St+Miami+FL+33137" target="_blank" rel="noreferrer">148 NE 28TH ST.<br />MIAMI, FL 33137</a><br />♡</p>
+      </div>
+      <div class="footer-links">
+        <a href="#events">Events</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#host">Host an event</a><a href="#contact">Contact</a>
+      </div>
+      <div class="footer-note">
+        <p>MADE WITH LOVE<br />IN MIAMI ♡</p>
+        <span>© <span id="year"></span> Dear Eleanor Miami</span>
+      </div>
+    </footer>
+
+    <nav class="social-bubbles" aria-label="Quick contact links">
+      <a class="social-bubble social-instagram" href="https://www.instagram.com/dear_eleanor305/" target="_blank" rel="noreferrer" aria-label="Follow Dear Eleanor on Instagram" data-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle class="social-dot" cx="17.7" cy="6.5" r="1"></circle></svg>
+      </a>
+      <a class="social-bubble social-facebook" href="https://www.facebook.com/DearEleanor305/" target="_blank" rel="noreferrer" aria-label="Follow Dear Eleanor on Facebook" data-label="Facebook">
+        <span aria-hidden="true">f</span>
+      </a>
+      <a class="social-bubble social-email" href="mailto:DearEleanorMiami@gmail.com" aria-label="Email Dear Eleanor" data-label="Email">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m4 7 8 6 8-6"></path></svg>
+      </a>
+      <a class="social-bubble social-phone" href="tel:+13052090558" aria-label="Call Dear Eleanor at 305 209 0558" data-label="Call us">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 3.8 10 7.3 8.4 9.5c1.2 2.5 3.4 4.7 6 6l2.2-1.6 3.5 2.8-.8 3c-.2.7-.9 1.1-1.6 1-7.1-1.2-13.1-7.2-14.4-14.4-.1-.7.3-1.4 1-1.6l2.9-.9Z"></path></svg>
+      </a>
+    </nav>
+
+    <div class="bloom-chat-mount" data-bloom-chat-mount data-bloom-form-type="messenger"></div>
+
+    <div class="cursor-ambient" aria-hidden="true"></div>
+
+    <audio id="ambient-audio" autoplay loop preload="auto" playsinline>
+      <source src="assets/eleanor-after-hours.wav" type="audio/wav" />
+    </audio>
+    <button class="sound-toggle" type="button" aria-pressed="false" aria-label="Turn ambient music on">
+      <span class="sound-disc" aria-hidden="true">
+        <i class="sound-bar"></i><i class="sound-bar"></i><i class="sound-bar"></i>
+      </span>
+      <span class="sound-copy"><b>Tap for music</b><small>Eleanor after hours</small></span>
+    </button>
+    <p class="sound-status sr-only" role="status" aria-live="polite"></p>
+    <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+  </body>
+</html>
